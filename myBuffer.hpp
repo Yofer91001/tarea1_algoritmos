@@ -19,7 +19,7 @@ class EditorBuffer{
         void moveCursorToEnd();
         void insertCharacter(char ch);
         void deleteCharacter();
-        std::string getText() const;
+        std::string getText();
         unsigned getCursor() const;
         void display() const;
 };
