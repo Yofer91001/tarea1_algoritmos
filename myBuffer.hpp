@@ -11,8 +11,8 @@ class EditorBuffer{
         std::stack<char> before;
         std::stack<char> after;
     public:
-        EditorBuffer();
-        ~EditorBuffer();
+        EditorBuffer(){}
+        ~EditorBuffer(){}
         void moveCursorForward();
         void moveCursorBackward();
         void moveCursorToStart();

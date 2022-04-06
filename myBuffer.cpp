@@ -1,7 +1,17 @@
 #include "myBuffer.hpp"
 
 
+void EditorBuffer::insertCharacter(char ch){
+    before.push(ch);
+}
+void EditorBuffer::deleteCharacter(){
+    if(before.size() >0 ){
+        before.pop();
+    }else{
+        throw std::runtime_error("NOTHING TO DELETE");
+    }
 
+}
 void EditorBuffer::moveCursorForward(){
 
     if(after.size() != 0){
