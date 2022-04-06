@@ -23,6 +23,5 @@ class EditorBuffer{
         void deleteCharacter();
         std::string getText();
         unsigned getCursor() const;
-        void display() const;
 };
 #endif
