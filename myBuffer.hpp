@@ -10,6 +10,8 @@ class EditorBuffer{
     private:
         std::stack<char> before;
         std::stack<char> after;
+        EditorBuffer(const EditorBuffer &value){}
+        const EditorBuffer &operator=(const EditorBuffer &rhs) {return *this;}
     public:
         EditorBuffer(){}
         ~EditorBuffer(){}
