@@ -1,7 +1,7 @@
 #include <cctype>
 #include <iostream>
 #include <string>
-#include "buffer.hpp"
+#include "myBuffer.hpp"
 
 void executeCommand(EditorBuffer &buffer, std::string);
 void displayBuffer(EditorBuffer &buffer);

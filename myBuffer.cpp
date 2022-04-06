@@ -15,15 +15,29 @@ void EditorBuffer::deleteCharacter(){
 void EditorBuffer::moveCursorForward(){
 
     if(after.size() != 0){
-        char temp = before.top();
-        before.pop();
-        after.push(temp);
+        char temp = after.top();
+        after.pop();
+        before.push(temp);
     }
 
 };
 void EditorBuffer::moveCursorBackward(){
 
     if(before.size() != 0){
+        char temp = before.top();
+        before.pop();
+        after.push(temp);
+    }
+};
+void EditorBuffer::moveCursorToStart(){
+    while(!before.empty()){
+        char temp = before.top();
+        before.pop();
+        after.push(temp);
+    }
+};
+void EditorBuffer::moveCursorToEnd(){
+    while(!after.empty()){
         char temp = after.top();
         after.pop();
         before.push(temp);
