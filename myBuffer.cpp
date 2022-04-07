@@ -55,7 +55,7 @@ std::string EditorBuffer::getText(){
         text += after.top();
         moveCursorForward();
     }
-    std::cout<<"^";
+    //std::cout<<"^";
     for(int i = 0; i < after_len; i++){
         text += after.top();
         moveCursorForward();
