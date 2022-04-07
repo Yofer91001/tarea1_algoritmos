@@ -40,7 +40,7 @@ void executeCommand(EditorBuffer &buffer, std::string line) {
     printHelpText(); break;
   case 'Q':
     exit(0);
-  dafault:
+  default:
     std::cout << "Illegal command\n"; break;
   }
 }
