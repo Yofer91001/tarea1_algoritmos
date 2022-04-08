@@ -1,6 +1,7 @@
 #include "myBuffer.hpp"
 
-
+EditorBuffer::EditorBuffer() {} 
+EditorBuffer::~EditorBuffer() {} 
 void EditorBuffer::insertCharacter(char ch){
     before.push(ch);
 }
